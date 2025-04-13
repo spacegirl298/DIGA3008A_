@@ -1,66 +1,49 @@
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  padding: 20px 0;
-  z-index: 1000;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  background-color: rgba(205, 209, 208, 0.9);
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
 }
 
-  .navbar ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-  }
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  transition: all 0.3s ease;
+}
 
-  .navbar li {
-      margin: 0 25px;
-      position: relative;
-  }
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  left: 0;
+  bottom: -4px;
+  transition: width 0.3s ease;
+}
 
-      .navbar li.active {
-          font-size: 20px;
-          font-weight: bold;
-          font-family: 'Palatino Linotype', serif;
-          color: #000;
-          border-bottom: 2px solid #000;
-      }
+nav ul li a:hover {
+  color: #06141b;
+}
 
-  .navbar a {
-      text-decoration: none;
-      font-size: 18px;
-      font-family: 'Palatino Linotype', serif;
-      color: #000;
-      transition: all 0.3s ease;
-      position: relative;
-  }
-
-      .navbar a::after {
-          content: '';
-          position: absolute;
-          bottom: -5px;
-          left: 0;
-          width: 0%;
-          height: 2px;
-          background-color: black;
-          transition: width 0.3s ease;
-      }
-
-      .navbar a:hover::after {
-          width: 100%;
-      }
-
-      .navbar a:hover {
-          color: #1a1a1a;
-      }
+nav ul li a:hover::after {
+  width: 100%;
+}
+.active {
+  color: #4a6a5f;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+}
 
 body::before {
   content: "";
@@ -72,16 +55,15 @@ body::before {
 
 body {
   padding-top: 100px;
-  background: url('BgImg.jpg') no-repeat center center fixed;
+  background: url("BgImg.jpg") no-repeat center center fixed;
   background-size: cover;
   overflow-x: hidden;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #000;
   margin: 0;
   padding: 0;
   width: 100%;
 }
-
 
 .intro {
   padding-top: 80px;
@@ -90,14 +72,14 @@ body {
   margin-bottom: 40px;
   color: antiquewhite;
   font-size: 1.5rem;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-  .intro .subtitle {
-      font-style: italic;
-      color: #ccc;
-      font-size: 1rem;
-  }
+.intro .subtitle {
+  font-style: italic;
+  color: #ccc;
+  font-size: 1rem;
+}
 
 .blog-list {
   display: flex;
@@ -111,7 +93,7 @@ body {
 .blog-card {
   display: flex;
   align-items: center;
-  background: rgba(200, 221, 213, 0.9); /* green tone */
+  background: rgba(74, 106, 95, 0.7); /* green tone */
   backdrop-filter: blur(5px);
   border-radius: 12px;
   padding: 20px;
@@ -121,11 +103,10 @@ body {
   color: white; /* make text visible on green */
 }
 
-
-  .blog-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
-  }
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
 
 .thumbnail {
   width: 70px;
@@ -134,24 +115,30 @@ body {
   border-radius: 10px;
   margin-right: 20px;
   flex-shrink: 0;
-  box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Optional: makes sure the image fills the space nicely */
+  border-radius: 10px; /* Optional: matches the parent if you want rounded corners on the image */
 }
 
 .blog-content {
   flex-grow: 1;
 }
 
-  .blog-content h2 {
-      font-size: 1.2rem;
-      margin: 0 0 5px 0;
-      color: #111;
-  }
+.blog-content h2 {
+  font-size: 1.2rem;
+  margin: 0 0 5px 0;
+  color: #111;
+}
 
-  .blog-content .tagline {
-      font-size: 0.95rem;
-      color: #444;
-  }
-
+.blog-content .tagline {
+  font-size: 0.95rem;
+  color: #444;
+}
 
 .blog-date {
   font-size: 0.75rem;
@@ -161,69 +148,41 @@ body {
   top: 20px;
 }
 
-
 .blog-link {
   text-decoration: none;
   color: inherit;
   display: block;
 }
 
-
-.footer-nav {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100vw;
-  height: 100px;
-  background-color: rgba(205, 209, 208, 1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+footer {
+  text-align: center;
+  padding: 30px 10px 10px;
+  margin-top: 40px;
+  background-color: rgba(205, 209, 208, 0.85);
+  border-top: 2px solid #ccc;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.footer-nav ul {
-    padding-top: 20px;
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+}
+
+footer nav ul li {
   list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-.footer-nav li {
-  margin: 0 20px;
-  position: relative;
 }
 
-
-.footer-nav a {
-   
+footer nav ul li a {
+  color: #000;
+  font-weight: 600;
   text-decoration: none;
-  color: black;
-  font-size: 20px;
-  font-weight: bold;
   transition: color 0.3s ease;
-  font-family: Palatino Linotype, sans-serif;
-  color: black;
 }
 
-.footer-nav::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background-color: black;
-  transition: width 0.3s ease;
-}
-.footer-nav a:hover::after {
-  width: 100%;
-}
-
-.footer-nav :hover {
+footer nav ul li a:hover {
   color: #06141b;
 }
