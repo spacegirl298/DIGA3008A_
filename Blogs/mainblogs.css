@@ -124,7 +124,12 @@ body {
   object-fit: cover; /* Optional: makes sure the image fills the space nicely */
   border-radius: 10px; /* Optional: matches the parent if you want rounded corners on the image */
 }
-
+.entry-title {
+  font-family: Palatino Linotype, sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
 .blog-content {
   flex-grow: 1;
 }

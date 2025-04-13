@@ -153,7 +153,12 @@ nav ul {
     gap: 20px;
     padding: 0;
   }
-  
+  .entry-title {
+    font-family: Palatino Linotype, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+  }
   footer nav ul li {
     list-style: none;
   }

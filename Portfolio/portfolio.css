@@ -88,6 +88,13 @@
     color: #ccc;
     font-size: 1rem;
   }
+
+  .entry-title {
+    font-family: Palatino Linotype, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+  }
   
   .portfolio-list {
     display: flex;
@@ -149,6 +156,54 @@
     color: inherit;
     display: block;
   }
+  .calendar {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(74, 106, 95, 0.9);
+  
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    color: #111;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    color: #06141b;
+    margin-bottom: 12px;
+    font-weight: bold;
+  }
+  
+  .calendar-p {
+    margin-bottom: 16px;
+    font-size: 1.1em;
+  }
+  .calendar-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .calendar-gallery img {
+    width: 200px; /* or adjust as needed */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .calendar-text{
+    color: white; /* make text visible on green */
+    text-align: center;
+  }
+  .calendar-gallery img:hover {
+    transform: scale(1.05);
+  }
+  
   
   footer {
     text-align: center;
