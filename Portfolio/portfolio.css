@@ -89,7 +89,7 @@
     font-size: 1rem;
   }
   
-  .games-list {
+  .portfolio-list {
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -98,7 +98,7 @@
     padding: 20px;
   }
   
-  .games-card {
+  .portfolio-card {
     display: flex;
     align-items: center;
     background: rgba(74, 106, 95, 0.7); /* green tone */
@@ -111,7 +111,7 @@
     color: white; /* make text visible on green */
   }
   
-  .games-card:hover {
+  .portfolio-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
   }
@@ -133,18 +133,18 @@
     border-radius: 10px;
   }
   
-  .games-content {
+  .portfolio-content {
     flex-grow: 1;
   }
   
-  .games-content h2 {
+  .portfolio-content h2 {
     font-size: 1.2rem;
     margin: 0 0 5px 0;
     color: #111;
   }
   
   
-  .games-link {
+  .portfolio-link {
     text-decoration: none;
     color: inherit;
     display: block;
