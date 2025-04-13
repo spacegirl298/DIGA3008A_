@@ -1,4 +1,12 @@
 /*Navigation Bar*/
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
 nav ul {
   list-style: none;
   display: flex;
@@ -38,14 +46,13 @@ nav ul li a:hover {
 nav ul li a:hover::after {
   width: 100%;
 }
-.active{
-    color: #4a6a5f;
-    text-decoration: underline;
-    font-weight: bold;
-    font-size: 18px;
-    position: relative;
-    
-  }
+.active {
+  color: #4a6a5f;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+}
 /*First thing you see on website*/
 .entry-title {
   font-family: Palatino Linotype, sans-serif;
