@@ -20,15 +20,16 @@
   margin: 0 20px;
   position: relative;
 }
+
 .navbar li.active {
   text-decoration: none;
-  color: black;
+  color: #4a6a5f;
   font-size: 20px;
   font-weight: bold;
   transition: color 0.3s ease;
   font-family: Palatino Linotype, sans-serif;
-  color: black;
-  border-bottom: 2px solid black;
+  color: #4a6a5f;
+  border-bottom: 2px solid #4a6a5f;
 }
 
 .navbar a {
@@ -211,16 +212,6 @@ body {
   position: relative;
 }
 
-.footer-nav li.active {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-  font-weight: bold;
-  transition: color 0.3s ease;
-  font-family: Palatino Linotype, sans-serif;
-  color: black;
-  border-bottom: 2px solid black;
-}
 
 .footer-nav a {
    
