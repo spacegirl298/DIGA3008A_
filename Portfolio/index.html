@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Jessica Jardim" />
-    <meta name = "description" content = "Portfolio of Jessica Jardim, showcasing games, paintings, drawings, and logos."/>
-    <meta name = "keywords" content = "Portfolio, games, paintings, drawings, logos"/>
-    <link rel="stylesheet" href="Portfolio.css" />
+    <meta
+      name="description"
+      content="Portfolio of Jessica Jardim, showcasing games, paintings, drawings, and logos."
+    />
+    <meta
+      name="keywords"
+      content="Portfolio, games, paintings, drawings, logos"
+    />
+    <link rel="stylesheet" href="portfolio.css" />
     <title>Portfolio</title>
   </head>
   <body>
@@ -16,7 +22,7 @@
           <li><a href="../Blogs/index.html">Blogs</a></li>
           <li><a href="../Design/index.html">Design</a></li>
           <li><a href="../Essays/index.html">Essays</a></li>
-          <li>Portfolio</li>
+          <li class="active">Portfolio</li>
           <li><a href="../index.html">Home</a></li>
           <li><a href="../index.html#About Me"> About Me</a></li>
         </ul>
@@ -24,95 +30,91 @@
     </header>
     <main>
       <article class="h-entry">
-        <h1 class="entry-title">PORTFOLIO</h1>
-        <h2>Games</h2>
-        <figure>
-          <img src="Game1.png" alt="Cover image of the game CozyCorners" />
-          <p>
-            <a
-              href="https://jessica-jardim.itch.io/cozycorners"
-              target="_blank"
-              class="url"
-            >
-              CozyCorners
-            </a>
-          </p>
-          <figcaption>Declutter the mess, design with finesse!</figcaption>
-          <p>
-            Step into the mess and make magic in CozyCorners. An isometric
-            cleaning and decorating game where you transform chaotic homes into
-            beautiful, personalized spaces. Whether you're vacuuming dusty
-            floors or choosing the perfect wallpaper, every action is designed
-            to be deeply satisfying and visually rewarding.
-          </p>
+        <section class="intro">
+          <h1 class="entry-title">Portfolio</h1>
+        </section>
+        <section class="games-list">
+          <h2 class = "titles">Games</h2>
 
-          <img src="Game2.png" alt="Cover image of the game Leprechauna" />
-          <p>
-            <a
-              href="https://jessica-jardim.itch.io/leprechauna"
-              target="_blank"
-              class="url"
-              >Leprechauna</a
-            >
-          </p>
-          <figcaption>
-            Battle of Magic: Leprechauns vs. Fairies – Where Mischief Meets
-            Mayhem!
-          </figcaption>
-          <p>
-            Step into a magical world where ancient rivalries come to life! In
-            Leprechauna, you take on the role of a feisty leprechaun defending
-            your pot of gold from waves of mischievous and magical fairies.
-            Armed with enchanted golden coins, you’ll shoot, dodge, and
-            strategize your way through action-packed levels in this 2D
-            adventure.
-          </p>
-          <img src="Game3.png" alt="COver image of the game Pizza Eats" />
-          <p>
-            <a
-              href="https://jessica-jardim.itch.io/pizza-eats-game"
-              target="_blank"
-              class="url"
-            >
-              Pizza Eats
-            </a>
-          </p>
-          <figcaption>We deliver mystery Pizzas made by our chefs</figcaption>
-          <p>
-            In Pizza Eats, the dice are in charge — literally! This 2D
-            roll-and-write computer game flips the script, putting your fate
-            (and your pizza) in the hands of the dice. Each round, three numbers
-            are rolled, and it’s up to you to use them wisely: pick your
-            toppings, choose a slice, and move across the map to deliver your
-            delicious creation. Strategize your moves, fill out your pizza, and
-            race against your opponent to be the first to deliver hot, fresh
-            slices to every house on the block. The first player to complete all
-            deliveries wins — but with the dice calling the shots, anything can
-            happen!
-          </p>
-          <img src="Game4.png" alt="Cover image of the game Broken Bonds" />
-          <p>
-            <a
-              href="https://jessica-jardim.itch.io/broken-bonds"
-              target="_blank"
-              class="url"
-              >Broken Bonds
-            </a>
-          </p>
-          <figcaption>
-            Stolen away. Stitch by stitch, find your way home.
-          </figcaption>
-          <p>
-            In Broken Bonds, step into the stitched shoes of a once-beloved
-            teddy bear, torn from your rightful owner by a troubled brother and
-            locked away in a room that feels more like a prison. From your
-            small, plush perspective, navigate a first-person journey through
-            shadows and memories as you search for a way out. Solve
-            environmental puzzles and push your limits to return to the one who
-            needs you most. But even once you find your way back, the journey
-            isn’t over — you’ll need to mend your broken arm.
-          </p>
-        </figure>
+          <a
+            href="https://jessica-jardim.itch.io/cozycorners"
+            target="_blank"
+            class="games-link"
+          >
+            <article class="games-card">
+              <div class="thumbnail">
+                <img
+                  src="Game1.png"
+                  alt="Cover image of the game CozyCorners"
+                />
+              </div>
+              <div class="games-content">
+                <h2>CozyCorners</h2>
+                <p class="">Step into the mess and make magic in CozyCorners. An isometric
+                  cleaning and decorating game where you transform chaotic homes into
+                  beautiful, personalized spaces. Whether you're vacuuming dusty
+                  floors or choosing the perfect wallpaper, every action is designed
+                  to be deeply satisfying and visually rewarding.</p>
+              </div>
+            </article>
+          </a>
+
+          
+           
+
+          <a
+            href="https://jessica-jardim.itch.io/pizza-eats-game"
+            target="_blank"
+            class="games-link"
+          >
+            <article class="games-card">
+              <div class="thumbnail">
+                <img src="Game2.png" alt="Cover image of the game PizzaEats" />
+              </div>
+              <div class="games-content">
+                <h2>Pizza Eats</h2>
+                <p class="">  In Pizza Eats, the dice are in charge — literally! This 2D
+                  roll-and-write computer game flips the script, putting your fate
+                  (and your pizza) in the hands of the dice. Each round, three numbers
+                  are rolled, and it’s up to you to use them wisely: pick your
+                  toppings, choose a slice, and move across the map to deliver your
+                  delicious creation. Strategize your moves, fill out your pizza, and
+                  race against your opponent to be the first to deliver hot, fresh
+                  slices to every house on the block. The first player to complete all
+                  deliveries wins — but with the dice calling the shots, anything can
+                  happen!</p>
+              </div>
+            </article>
+          </a>
+
+          <a
+            href="https://jessica-jardim.itch.io/broken-bonds"
+            target="_blank"
+            class="games-link"
+          >
+            <article class="games-card">
+              <div class="thumbnail">
+                <img
+                  src="Game3.png"
+                  alt="Cover image of the game Broken Bonds"
+                />
+              </div>
+              <div class="games-content">
+                <h2>Broken Bonds</h2>
+                <p class="">
+                  In Broken Bonds, step into the stitched shoes of a once-beloved
+                  teddy bear, torn from your rightful owner by a troubled brother and
+                  locked away in a room that feels more like a prison. From your
+                  small, plush perspective, navigate a first-person journey through
+                  shadows and memories as you search for a way out. Solve
+                  environmental puzzles and push your limits to return to the one who
+                  needs you most. But even once you find your way back, the journey
+                  isn’t over — you’ll need to mend your broken arm.
+                </p>
+              </div>
+            </article>
+          </a>
+        </section>
 
         <h2>Paintings</h2>
         <figure>
