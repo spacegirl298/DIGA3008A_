@@ -132,7 +132,12 @@ nav ul {
     transform: scale(1.03);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
   }
-  
+  .entry-title {
+    font-family: Palatino Linotype, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+  }
 
   /* Footer */
   footer {
