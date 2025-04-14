@@ -1,4 +1,9 @@
-* body {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
     font-family: "Palatino Linotype", serif;
     background: url("../Blog1/BgImg.jpg") no-repeat center center fixed;
   

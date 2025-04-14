@@ -1,12 +1,17 @@
-* body {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
   font-family: "Palatino Linotype", serif;
   background: url("BgImg.jpg") no-repeat center center fixed;
-
   background-size: cover;
   color: #f4f4f4;
   padding: 60px 20px 20px;
   line-height: 1.6;
   position: relative;
+  
 }
 
 body::before {
@@ -19,7 +24,18 @@ body::before {
 
 /* Navbar */
 
-nav ul {
+.navbar {
+    position: sticky;
+    top: 0;
+    
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+.navbar ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -44,7 +60,6 @@ nav ul li a::after {
   content: "";
   position: absolute;
   width: 0%;
-  
   height: 2px;
   background-color: black;
   left: 0;
@@ -59,6 +74,11 @@ nav ul li a:hover {
 nav ul li a:hover::after {
   width: 100%;
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
 
 /* Blog Navigation Links */
 article ul {
@@ -92,6 +112,7 @@ article ul li a:hover {
 
 /* Article Styling */
 main {
+    
   max-width: 900px;
   margin: auto;
   padding: 20px;
@@ -101,6 +122,10 @@ main {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   color: #111;
 }
+.section-spacing{
+    margin-top: 80px;
+}
+
 .p-author{
     color:white;
 }
@@ -147,7 +172,6 @@ footer {
     border-top: 2px solid #ccc;
     border-radius: 20px 20px 0 0;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
-    
   }
   
   footer nav ul {
@@ -156,9 +180,6 @@ footer {
     flex-wrap: wrap;
     gap: 20px;
     padding: 0;
-    bottom:0;
-    left:0;
-    right:0;
   }
   
   footer nav ul li {
@@ -175,4 +196,3 @@ footer {
   footer nav ul li a:hover {
     color: #06141b;
   }
-  

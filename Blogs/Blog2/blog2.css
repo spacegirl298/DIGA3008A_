@@ -1,4 +1,9 @@
-* body {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   body {
   font-family: "Palatino Linotype", serif;
   background: url("../Blog1/BgImg.jpg") no-repeat center center fixed;
 
@@ -18,7 +23,18 @@ body::before {
 }
 
 /* Navbar */
-nav ul {
+.navbar {
+    position: sticky;
+    top: 0;
+    
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+.navbar ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -57,6 +73,11 @@ nav ul li a:hover {
 nav ul li a:hover::after {
   width: 100%;
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
 
 /* Blog Navigation Links */
 article ul {
@@ -98,6 +119,9 @@ main {
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   color: #111;
+}
+.section-spacing{
+    margin-top: 80px;
 }
 
 .p-author{
