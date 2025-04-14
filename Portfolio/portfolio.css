@@ -1,4 +1,10 @@
 
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   nav ul {
     list-style: none;
     display: flex;
@@ -49,8 +55,16 @@
     text-align: center;
     margin-top: 20px;
     font-size: 2rem;
-    color: antiquewhite;
+    color: white;
+    font-family: palatino linotype;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  h2{
+    font-family: Palatinotype, sans-serif;
+  }
+
+  p{
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   body::before {
@@ -94,6 +108,11 @@
     color: white;
     text-align: center;
     font-size: 40px;
+    margin-bottom: 0;
+  }
+  .headings{
+    font-family: Palatino Linotype, sans-serif;
+    font-weight: bold;
   }
   
   .portfolio-list {
