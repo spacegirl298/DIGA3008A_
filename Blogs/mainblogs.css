@@ -63,11 +63,14 @@ body {
   background: url("BgImg.jpg") no-repeat center center fixed;
   background-size: cover;
   overflow-x: hidden;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: #000;
   margin: 0;
   padding: 0;
   width: 100%;
+}
+h2{
+  font-family: Palatino Linotype, sans-serif;
 }
 
 .intro {
@@ -82,6 +85,7 @@ body {
 
 .intro .subtitle {
   font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
   color: #ccc;
   font-size: 1rem;
 }
@@ -172,27 +176,27 @@ footer {
   border-top: 2px solid #ccc;
   border-radius: 20px 20px 0 0;
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
-  }
-  
-  footer nav ul {
+}
+
+footer nav ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
   padding: 0;
-  }
-  
-  footer nav ul li {
+}
+
+footer nav ul li {
   list-style: none;
-  }
-  
-  footer nav ul li a {
+}
+
+.footer-nav ul li a {
   color: #000;
   font-weight: 600;
   text-decoration: none;
   transition: color 0.3s ease;
-  }
-  
-  footer nav ul li a:hover {
+}
+
+.footer-nav nav ul li a:hover {
   color: #06141b;
-  }
+}

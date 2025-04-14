@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
  body {
-font-family: "Palatino Linotype", serif;
+font-family: Arial, Helvetica, sans-serif;
 background: url("../Blog1/BgImg.jpg") no-repeat center center fixed;
 
 background-size: cover;
@@ -20,6 +20,18 @@ position: fixed;
 inset: 0;
 background-color: rgba(0, 0, 0, 0.5);
 z-index: -1;
+}
+h2{
+  font-family: footlight, sans-serif;
+ 
+  color: black;
+  font-size: 28px;
+  
+}
+h3{
+  font-family: Palatino Linotype, sans-serif;
+  color: black;
+  font-size: 22px;
 }
 
 /* Navbar */
@@ -170,7 +182,7 @@ color: #06141b;
 
 .image {
   text-align: center;
-  max-width: 350px;
+  max-width: 300px;
 }
 
 .image img {
@@ -209,13 +221,13 @@ footer nav ul li {
 list-style: none;
 }
 
-footer nav ul li a {
+.footer-nav ul li a {
 color: #000;
 font-weight: 600;
 text-decoration: none;
 transition: color 0.3s ease;
 }
 
-footer nav ul li a:hover {
+.footer-nav nav ul li a:hover {
 color: #06141b;
 }
