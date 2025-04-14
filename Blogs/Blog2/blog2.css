@@ -160,7 +160,32 @@ a.url {
 a.url:hover {
   color: #06141b;
 }
-
+.wireframe-gallery {
+    display: flex;
+    gap: 20px; /* spacing between images */
+    justify-content: left; /* centers the group */
+    flex-wrap: wrap; /* allows wrapping on small screens */
+    margin-top: 30px;
+  }
+  
+  .image {
+    text-align: center;
+    max-width: 200px;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+  
+  .image figcaption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #fff; /* adjust based on your background */
+  }
+  
 /* Footer */
 footer {
   text-align: center;
