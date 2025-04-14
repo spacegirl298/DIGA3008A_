@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
   }
-.navbar {
+  .navbar {
     position: sticky;
     top: 0;
     
@@ -12,7 +12,6 @@
     z-index: 1000;
     margin-top: 0;
     padding-top: 0;
-    padding-bottom: 40px;
   }
 
 .navbar ul {
@@ -55,17 +54,19 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-
- /*main body*/
- .active {
-    color: #4a6a5f;
-    text-decoration: underline;
-    font-weight: bold;
-    font-size: 18px;
-    position: relative;
+html, body {
+    margin: 0;
+    padding: 0;
   }
+.active {
+  color: #4a6a5f;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+}
   body {
-    padding-top: 150px;
+    margin-top: 80px;
     background: url("../Homepage/BgImg.jpg") no-repeat center center fixed;
     background-size: cover;
     overflow-x: hidden;
