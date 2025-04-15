@@ -175,8 +175,8 @@
   .wireframe-gallery {
     display: flex;
     gap: 20px; /* spacing between images */
-    justify-content: left; /* centers the group */
-    flex-wrap: wrap; /* allows wrapping on small screens */
+    justify-content: left;
+    flex-wrap: wrap; 
     margin-top: 30px;
   }
   
@@ -195,7 +195,7 @@
   .image figcaption {
     margin-top: 10px;
     font-size: 0.9rem;
-    color: #fff; /* adjust based on your background */
+    color: #fff; 
   }
   
   /* Footer */
