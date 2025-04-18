@@ -1,56 +1,7 @@
 
   
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 20px;
-    background-color: rgba(205, 209, 208, 0.9);
-    border-radius: 0 0 12px 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    flex-wrap: wrap;
-  }
   
-  nav ul li a {
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    position: relative;
-    transition: all 0.3s ease;
-  }
-  
-  nav ul li a::after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: black;
-    left: 0;
-    bottom: -4px;
-    transition: width 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #06141b;
-  }
-  
-  nav ul li a:hover::after {
-    width: 100%;
-  }
-  .active {
-    color: #4a6a5f;
-    text-decoration: underline;
-    font-weight: bold;
-    font-size: 18px;
-    position: relative;
-  }
+
   .titles{
     text-align: center;
     margin-top: 20px;
@@ -77,9 +28,7 @@
   
   body {
     padding-top: 100px;
-    background: url("../Homepage/BgImg.jpg") no-repeat center center fixed;
-    background-size: cover;
-    overflow-x: hidden;
+   
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: #000;
     margin: 0;
